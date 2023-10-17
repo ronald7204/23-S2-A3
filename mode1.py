@@ -1,4 +1,5 @@
 from island import Island
+from data_structures.bst import BSTInOrderIterator, BinarySearchTree
 
 class Mode1Navigator:
     """
@@ -9,6 +10,11 @@ class Mode1Navigator:
         """
         Student-TODO: Best/Worst Case
         """
+        self.islands = islands
+        self.crew = crew
+        
+        self.bst = BinarySearchTree()
+
         raise NotImplementedError()
 
     def select_islands(self) -> list[tuple[Island, int]]:
